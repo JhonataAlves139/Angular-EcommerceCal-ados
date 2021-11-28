@@ -1,0 +1,177 @@
+[debug] [2021-11-28T00:46:16.339Z] ----------------------------------------------------------------------
+[debug] [2021-11-28T00:46:16.341Z] Command:       D:\Programas\node.exe C:\Users\leand_v6pzc78\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2021-11-28T00:46:16.342Z] CLI Version:   9.23.0
+[debug] [2021-11-28T00:46:16.342Z] Platform:      win32
+[debug] [2021-11-28T00:46:16.342Z] Node Version:  v16.13.0
+[debug] [2021-11-28T00:46:16.343Z] Time:          Sat Nov 27 2021 21:46:16 GMT-0300 (Horário Padrão de Brasília)
+[debug] [2021-11-28T00:46:16.343Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-11-28T00:46:16.395Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-11-28T00:46:16.395Z] > authorizing via signed-in user (jhonata.ferreira139@gmail.com)
+[debug] [2021-11-28T00:46:16.395Z] [iam] checking project projeto-angular-59cca for permissions ["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2021-11-28T00:46:16.397Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/projeto-angular-59cca:testIamPermissions  
+ {"permissions":["firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]}
+[debug] [2021-11-28T00:46:17.212Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:15 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","server-timing":"gfet4t7; dur=726","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:17.214Z] > refreshing access token with scopes: []
+[debug] [2021-11-28T00:46:17.214Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-28T00:46:17.346Z] <<< HTTP RESPONSE 200 {"expires":"Mon, 01 Jan 1990 00:00:00 GMT","date":"Sun, 28 Nov 2021 00:46:16 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:17.381Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca [none]
+[debug] [2021-11-28T00:46:18.431Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca 200
+[debug] [2021-11-28T00:46:18.432Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca {"projectId":"projeto-angular-59cca","projectNumber":"100237538168","displayName":"projeto angular","name":"projects/projeto-angular-59cca","resources":{"hostingSite":"projeto-angular-59cca","realtimeDatabaseInstance":"projeto-angular-59cca-default-rtdb"},"state":"ACTIVE"}
+[debug] [2021-11-28T00:46:18.432Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca [none]
+[debug] [2021-11-28T00:46:18.839Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca 200
+[debug] [2021-11-28T00:46:18.840Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/projeto-angular-59cca {"projectId":"projeto-angular-59cca","projectNumber":"100237538168","displayName":"projeto angular","name":"projects/projeto-angular-59cca","resources":{"hostingSite":"projeto-angular-59cca","realtimeDatabaseInstance":"projeto-angular-59cca-default-rtdb"},"state":"ACTIVE"}
+[info] 
+[info] === Deploying to 'projeto-angular-59cca'...
+[info] 
+[info] i  deploying database, hosting 
+[info] i  database: checking rules syntax... 
+[debug] [2021-11-28T00:46:18.849Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-28T00:46:18.849Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-28T00:46:19.050Z] <<< HTTP RESPONSE 200 {"date":"Sun, 28 Nov 2021 00:46:17 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:19.076Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/projeto-angular-59cca/locations/-/instances/projeto-angular-59cca-default-rtdb  
+ 
+[debug] [2021-11-28T00:46:19.985Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:18 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:19.987Z] >>> HTTP REQUEST PUT https://projeto-angular-59cca-default-rtdb.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2021-11-28T00:46:20.457Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 28 Nov 2021 00:46:19 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  database: rules syntax for database projeto-angular-59cca-default-rtdb is valid 
+[debug] [2021-11-28T00:46:20.460Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions  
+ {"config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"}}
+[debug] [2021-11-28T00:46:22.152Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:20 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] i  hosting[projeto-angular-59cca]: beginning deploy... 
+[info] i  hosting[projeto-angular-59cca]: found 15 files in public 
+[debug] [2021-11-28T00:46:22.207Z] > refreshing access token with scopes: []
+[debug] [2021-11-28T00:46:22.207Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-28T00:46:22.208Z] [hosting] hash cache [cHVibGlj] stored for 15 files
+[debug] [2021-11-28T00:46:22.209Z] [hosting][hash queue][FINAL] {"max":31,"min":11,"avg":16,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":36}
+[debug] [2021-11-28T00:46:22.403Z] <<< HTTP RESPONSE 200 {"date":"Sun, 28 Nov 2021 00:46:21 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:22.428Z] >>> [apiv2][query] POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions/b5515340995a1110:populateFiles [none]
+[debug] [2021-11-28T00:46:22.428Z] >>> [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions/b5515340995a1110:populateFiles {"files":{"/3rdpartylicenses.txt":"e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f","/hue.f8505bd4d6f3e3aa435b.png":"6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341","/index.html":"2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7","/color.6441e63a57ccc5105bad.png":"c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6","/polyfills.fe861a01c9204748df8e.js":"52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052","/runtime.47c71d9e559014d0f763.js":"933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a","/primeicons.3a0d4a58da62cf7c55bb.ttf":"2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3","/primeicons.dfbfef2de4bfb34e9722.eot":"7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c","/assets/icones/firebase.png":"4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49","/primeicons.e61f3495a7ecd3d571a4.woff":"378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32","/assets/icones/Github.png":"d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a","/assets/icones/logo.png":"dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0","/primeicons.c55d94a248721abbd220.svg":"0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba","/main.4e46865ff508f4e26ed0.js":"2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a","/styles.8097e546bc4561040db0.css":"a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3"}}
+[debug] [2021-11-28T00:46:23.590Z] <<< [apiv2][status] POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions/b5515340995a1110:populateFiles 200
+[debug] [2021-11-28T00:46:23.590Z] <<< [apiv2][body] POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions/b5515340995a1110:populateFiles {"uploadRequiredHashes":["378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32","dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0","2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7","e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f","52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052","6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341","7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c","2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a","d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a","a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3","2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3","4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49","933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a","0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba","c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6"],"uploadUrl":"https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files"}
+[debug] [2021-11-28T00:46:23.595Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32 [none]
+[debug] [2021-11-28T00:46:23.595Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32 [stream]
+[debug] [2021-11-28T00:46:23.596Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0 [none]
+[debug] [2021-11-28T00:46:23.596Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0 [stream]
+[debug] [2021-11-28T00:46:23.597Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7 [none]
+[debug] [2021-11-28T00:46:23.597Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7 [stream]
+[debug] [2021-11-28T00:46:23.598Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f [none]
+[debug] [2021-11-28T00:46:23.598Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f [stream]
+[debug] [2021-11-28T00:46:23.599Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052 [none]
+[debug] [2021-11-28T00:46:23.599Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052 [stream]
+[debug] [2021-11-28T00:46:23.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341 [none]
+[debug] [2021-11-28T00:46:23.600Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341 [stream]
+[debug] [2021-11-28T00:46:23.600Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c [none]
+[debug] [2021-11-28T00:46:23.601Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c [stream]
+[debug] [2021-11-28T00:46:23.601Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a [none]
+[debug] [2021-11-28T00:46:23.601Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a [stream]
+[debug] [2021-11-28T00:46:23.602Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a [none]
+[debug] [2021-11-28T00:46:23.602Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a [stream]
+[debug] [2021-11-28T00:46:23.603Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3 [none]
+[debug] [2021-11-28T00:46:23.603Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3 [stream]
+[debug] [2021-11-28T00:46:23.604Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3 [none]
+[debug] [2021-11-28T00:46:23.604Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3 [stream]
+[debug] [2021-11-28T00:46:23.604Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49 [none]
+[debug] [2021-11-28T00:46:23.604Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49 [stream]
+[debug] [2021-11-28T00:46:23.605Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a [none]
+[debug] [2021-11-28T00:46:23.605Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a [stream]
+[debug] [2021-11-28T00:46:23.605Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba [none]
+[debug] [2021-11-28T00:46:23.605Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba [stream]
+[debug] [2021-11-28T00:46:23.606Z] >>> [apiv2][query] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6 [none]
+[debug] [2021-11-28T00:46:23.606Z] >>> [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6 [stream]
+[debug] [2021-11-28T00:46:23.607Z] [hosting][populate queue][FINAL] {"max":1387,"min":1387,"avg":1387,"active":0,"complete":1,"success":1,"errored":0,"retried":0,"total":1,"elapsed":1400}
+[debug] [2021-11-28T00:46:23.607Z] [hosting] uploads queued: 15
+[debug] [2021-11-28T00:46:25.375Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a 200
+[debug] [2021-11-28T00:46:25.375Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/d4fd055f78999f37fa36538f3d02f1d34a9286dfa41a8f82bb31d488da40a71a [stream]
+[debug] [2021-11-28T00:46:25.478Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052 200
+[debug] [2021-11-28T00:46:25.478Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/52ee91b90d83b5c453a299d7d04ef748296a07ee1d5b452f32079a1d6a3f6052 [stream]
+[debug] [2021-11-28T00:46:25.484Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a 200
+[debug] [2021-11-28T00:46:25.485Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/933d34f3a1182813900186a05801a751b59ad23dd52713f4c3194e86befe9b2a [stream]
+[debug] [2021-11-28T00:46:25.490Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49 200
+[debug] [2021-11-28T00:46:25.490Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/4d9ff748b4c7c13b34b725345b2e99c554f215256fbdf17e3fbb1d7f5862fd49 [stream]
+[debug] [2021-11-28T00:46:25.597Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32 200
+[debug] [2021-11-28T00:46:25.597Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/378855e1eae55621ef0168dda22ffe68afd66747db4c43191bd31c1c30bf3b32 [stream]
+[debug] [2021-11-28T00:46:25.635Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7 200
+[debug] [2021-11-28T00:46:25.635Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2e72d5316c59b7e687c1668e485bacbac2fac0c7f0f883b6f37e22e5eb8515a7 [stream]
+[debug] [2021-11-28T00:46:25.645Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c 200
+[debug] [2021-11-28T00:46:25.645Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/7ce6a1b3cd71c6426804f2297f8b3b7808b8f0445f37f961afcffd72d790d67c [stream]
+[debug] [2021-11-28T00:46:25.859Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba 200
+[debug] [2021-11-28T00:46:25.860Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/0d96f270145b34f558f202ac4a466430fe0d0907f921570813993c496cb8e2ba [stream]
+[debug] [2021-11-28T00:46:26.451Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6 200
+[debug] [2021-11-28T00:46:26.452Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/c678e628a3db91d06ebaeae0f5267d69d7d01c773a5cdca2564408229372bcc6 [stream]
+[debug] [2021-11-28T00:46:26.500Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f 200
+[debug] [2021-11-28T00:46:26.500Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/e7a9eba81233f1f8cccdd1065533502740b9576dce6c5f254422287d5014841f [stream]
+[debug] [2021-11-28T00:46:26.583Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3 200
+[debug] [2021-11-28T00:46:26.584Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2edac8c43cd224503427d26710c2f1542b8322b5c91b22abef7745c1d4bdc7e3 [stream]
+[debug] [2021-11-28T00:46:26.978Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a 200
+[debug] [2021-11-28T00:46:26.979Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/2d7cbb84ce524db7c2e93b7af16dd57fc499967604c0542bcf60eb7d83fd260a [stream]
+[debug] [2021-11-28T00:46:27.443Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0 200
+[debug] [2021-11-28T00:46:27.443Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/dbf83b8372c4a0dc0808e44770fed8308c2b469c292ba8e78c829cd914eb50c0 [stream]
+[debug] [2021-11-28T00:46:28.862Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3 200
+[debug] [2021-11-28T00:46:28.862Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/a519ad8b598d9d0b4f043b67243141c41e7234d0c6dbc2ad8528b0ab776f76e3 [stream]
+[debug] [2021-11-28T00:46:32.398Z] <<< [apiv2][status] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341 200
+[debug] [2021-11-28T00:46:32.399Z] <<< [apiv2][body] POST https://upload-firebasehosting.googleapis.com/upload/sites/projeto-angular-59cca/versions/b5515340995a1110/files/6e90e7cf8107db09f2c57f9c136192392362d8d36aa3c307ac043e546b128341 [stream]
+[debug] [2021-11-28T00:46:32.399Z] [hosting][upload queue][FINAL] {"max":8808,"min":1784,"avg":3061.266666666668,"active":0,"complete":15,"success":15,"errored":0,"retried":0,"total":15,"elapsed":8809}
+[info] +  hosting[projeto-angular-59cca]: file upload complete 
+[debug] [2021-11-28T00:46:32.401Z] [hosting] deploy completed after 10247ms
+[info] i  database: releasing rules... 
+[debug] [2021-11-28T00:46:32.408Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-11-28T00:46:32.408Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-11-28T00:46:32.604Z] <<< HTTP RESPONSE 200 {"date":"Sun, 28 Nov 2021 00:46:31 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:32.646Z] >>> HTTP REQUEST GET https://firebasedatabase.googleapis.com/v1beta/projects/projeto-angular-59cca/locations/-/instances/projeto-angular-59cca-default-rtdb  
+ 
+[debug] [2021-11-28T00:46:33.627Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:32 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:33.628Z] >>> HTTP REQUEST PUT https://projeto-angular-59cca-default-rtdb.firebaseio.com/.settings/rules.json  
+ {
+  /* Visit https://firebase.google.com/docs/database/security to learn more about security rules. */
+  "rules": {
+    ".read": false,
+    ".write": false
+  }
+}
+[debug] [2021-11-28T00:46:34.022Z] <<< HTTP RESPONSE 200 {"server":"nginx","date":"Sun, 28 Nov 2021 00:46:32 GMT","content-type":"application/json; charset=utf-8","content-length":"15","connection":"keep-alive","access-control-allow-origin":"*","cache-control":"no-cache","strict-transport-security":"max-age=31556926; includeSubDomains; preload"}
+[info] +  database: rules for database projeto-angular-59cca-default-rtdb released successfully 
+[debug] [2021-11-28T00:46:34.024Z] [
+  {
+    "config": {
+      "public": "public",
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
+      ],
+      "rewrites": [
+        {
+          "source": "**",
+          "destination": "/index.html"
+        }
+      ],
+      "site": "projeto-angular-59cca"
+    },
+    "site": "projeto-angular-59cca",
+    "version": "sites/projeto-angular-59cca/versions/b5515340995a1110"
+  }
+]
+[info] i  hosting[projeto-angular-59cca]: finalizing version... 
+[debug] [2021-11-28T00:46:34.027Z] >>> HTTP REQUEST PATCH https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/versions/b5515340995a1110?updateMask=status  
+ {"status":"FINALIZED"}
+[debug] [2021-11-28T00:46:35.210Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:33 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:35.210Z] [hosting] finalized version for projeto-angular-59cca: {"name":"sites/projeto-angular-59cca/versions/b5515340995a1110","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-11-28T00:46:20.219513Z","createUser":{"email":"jhonata.ferreira139@gmail.com"},"finalizeTime":"2021-11-28T00:46:33.917299Z","finalizeUser":{"email":"jhonata.ferreira139@gmail.com"}}
+[info] +  hosting[projeto-angular-59cca]: version finalized 
+[info] i  hosting[projeto-angular-59cca]: releasing new version... 
+[debug] [2021-11-28T00:46:35.214Z] >>> HTTP REQUEST POST https://firebasehosting.googleapis.com/v1beta1/sites/projeto-angular-59cca/releases?version_name=sites/projeto-angular-59cca/versions/b5515340995a1110  
+ {"message":null}
+[debug] [2021-11-28T00:46:36.330Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sun, 28 Nov 2021 00:46:35 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-11-28T00:46:36.331Z] [hosting] release: {"name":"sites/projeto-angular-59cca/releases/1638060394376364","version":{"name":"sites/projeto-angular-59cca/versions/b5515340995a1110","status":"FINALIZED","config":{"rewrites":[{"glob":"**","path":"/index.html"}]},"labels":{"deployment-tool":"cli-firebase"},"createTime":"2021-11-28T00:46:20.219513Z","createUser":{"email":"jhonata.ferreira139@gmail.com"},"finalizeTime":"2021-11-28T00:46:33.917299Z","finalizeUser":{"email":"jhonata.ferreira139@gmail.com"}},"type":"DEPLOY","releaseTime":"2021-11-28T00:46:34.376364309Z","releaseUser":{"email":"jhonata.ferreira139@gmail.com"}}
+[info] +  hosting[projeto-angular-59cca]: release complete 
